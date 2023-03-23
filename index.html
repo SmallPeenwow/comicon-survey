@@ -10,22 +10,24 @@
 <body>
 
     <main>
-        <h2></h2>
-        <p></p>
+        <div class="header">
+            <h2>Kimiko Entertainment</h2>
+            <p>Comicon South Africa</p>
+        </div>
 
         <form>
-            <div>
+            <div class="child">
                 <label for="age">What is your age?</label>
                 <input type="text" name="age" id="age" placeholder="Enter your Age">
             </div>
 
-            <div>
+            <div class="child">
                 <label for="city">The city you live in?</label>
                 <input type="text" name="city" id="city" placeholder="Enter your City">
             </div>
 
             <div>
-                <h3>What is your Gender? </h3>
+                <h4>What is your Gender? </h4>
                 
                 <div class="gender-list">
                     <div>
@@ -43,34 +45,34 @@
                 </div>
             </div>
 
-            <div>
+            <div class="child">
                 <label for="comic">What is your favorite Comic?</label>
                 <input type="text" name="comic" id="comic" placeholder="Enter your favorite Comic">
             </div>
           
-            <div>
+            <div class="child">
                 <label for="day">What day should the event take place?</label>
                 <input type="text" name="day" id="day" placeholder="Enter your the Day">
             </div>
             
             <div>
                 <label for="accessible">Is our venue accessible to the disable?</label>
-                <div>
+                <div class="list">
                     <div>
-                        <label>Yes</label>
-                        <input type="radio">
+                        <label for="yes">Yes</label>
+                        <input id="yes" value="yes" for="list" type="radio">
                     </div>
 
                     <div>
-                        <label>No</label>
-                        <input type="radio">
+                        <label for="no">No</label>
+                        <input id="no" value="no" name="list" type="radio">
                     </div>
                 </div>
             </div>
 
-            <div>
-                <label>Any Feedback about the event?</label>
-                <textarea></textarea>
+            <div class="child form-feedback">
+                <label for="feedback" >Any Feedback about the event?</label>
+                <textarea id="feedback" name="feedback" rows="5" cols="25"></textarea>
             </div>
 
         </form>

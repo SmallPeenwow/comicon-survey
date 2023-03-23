@@ -2,6 +2,74 @@
 *::after,
 *::before {
 	padding: 0;
-	max-width: 0;
+	margin: 0;
 	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	background-color: #3b82f6;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+main {
+	height: 750px;
+	width: 500px;
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 80%;
+	align-items: flex-start;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid black;
+	width: 80%;
+	padding: 5px;
+}
+
+.child {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.child input {
+	width: 250px;
+}
+
+.child input,
+textarea {
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid black;
+	outline: none;
+	box-shadow: -1px 2px 3px gray;
+}
+
+.child input:focus,
+textarea:focus {
+	border: 1px solid #c3c3c3;
+	text-decoration: none;
+}
+
+.child label {
+	font-weight: 600;
+	padding: 0px 0px 0px 1px;
 }
