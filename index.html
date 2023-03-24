@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Survey</title>
 </head>
 <body>
 
     <main>
         <div class="header">
-            <h2>Kimiko Entertainment</h2>
+            <h2>Survey Form</h2>
             <p>Comicon South Africa</p>
         </div>
 
@@ -26,19 +26,19 @@
                 <input type="text" name="city" id="city" placeholder="Enter your City">
             </div>
 
-            <div>
+            <div class="gender-div">
                 <h4>What is your Gender? </h4>
                 
                 <div class="gender-list">
-                    <div>
+                    <div class="gender-child">
                         <input type="radio" id="male" value="male" name="gender-list">
                         <label for="male">Male</label>
                     </div>
-                    <div>
+                    <div class="gender-child">
                         <input type="radio" id="female" value="female" name="gender-list">
                         <label for="female">Female</label>
                     </div>
-                    <div>
+                    <div class="gender-child">
                         <input type="radio" id="preferNo" value="preferNo" name="gender-list">
                         <label for="preferNo">Prefer not to say</label>
                     </div>
@@ -55,15 +55,15 @@
                 <input type="text" name="day" id="day" placeholder="Enter your the Day">
             </div>
             
-            <div>
+            <div class="accessible-list">
                 <label for="accessible">Is our venue accessible to the disable?</label>
                 <div class="list">
-                    <div>
+                    <div class="list-child">
                         <label for="yes">Yes</label>
                         <input id="yes" value="yes" for="list" type="radio">
                     </div>
 
-                    <div>
+                    <div class="list-child">
                         <label for="no">No</label>
                         <input id="no" value="no" name="list" type="radio">
                     </div>
@@ -72,10 +72,14 @@
 
             <div class="child form-feedback">
                 <label for="feedback" >Any Feedback about the event?</label>
-                <textarea id="feedback" name="feedback" rows="5" cols="25"></textarea>
+                <textarea id="feedback" name="feedback" rows="5" cols="35"></textarea>
             </div>
 
         </form>
+        
+        <section>
+            <h3>Kimiko Entertainment</h3>
+        </section>
     </main>
     
 </body>

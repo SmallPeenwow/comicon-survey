@@ -23,6 +23,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
+	border-radius: 15px;
 }
 
 form {
@@ -69,7 +70,82 @@ textarea:focus {
 	text-decoration: none;
 }
 
-.child label {
+.child label,
+.accessible-list label {
 	font-weight: 600;
 	padding: 0px 0px 0px 1px;
+}
+
+.gender-list {
+	display: flex;
+	gap: 15px;
+}
+
+.gender-div {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.gender-child {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.list {
+	display: flex;
+	gap: 30px;
+}
+
+.list-child {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.list-child label {
+	font-weight: 400;
+}
+
+.accessible-list {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid black;
+	width: 80%;
+	margin-top: 20px;
+	padding: 10px 0px;
+}
+
+@media only screen and (max-width: 400px) {
+	main {
+		margin-top: 150px;
+		height: 800px;
+		width: 90%;
+	}
+
+	.child input,
+	textarea {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	main {
+		margin-top: 250px;
+		height: 870px;
+		padding: 10px;
+	}
+
+	.gender-list {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
